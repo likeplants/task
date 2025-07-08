@@ -1,0 +1,245 @@
+/* App.css */
+  
+  .scroll-container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .scroll-content {
+    width: 100%;
+    height: calc(100dvh - 3px - 200px);/* Header and Footer of CSS grid together 200px. Height of centered div 100vh*/
+    padding: 20px;
+    color: #fff;
+    background-color: black;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scroll-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scroll-content {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Style for the image container */
+.image-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the image */
+    margin: 20px 0;
+  }
+  
+  /* Image styling */
+  .image-container img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover; /* Ensures the image fits nicely within the set dimensions */
+  }
+
+
+  
+.ui.dropdown .menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0;
+    right: 0;
+    max-height: 200px; /* Optional: Add a max height for scrolling */
+    overflow-y: auto;
+}
+
+
+form.rjsf {
+  width: 100%;
+}
+
+form.rjsf fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-inline-size: auto; /* removes default min width */
+}
+
+form.rjsf legend {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+form.rjsf .control-label {
+  font-size: 10px;
+  margin-bottom: 5px;
+  color: white;
+  width: 100%;
+  display: block;
+  user-select: none;
+  text-align: left;
+  padding-left: 0px;
+}
+
+form.rjsf .ui.dropdown .menu {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0;
+  right: 0;
+  width:100%;
+  max-height: 200px; /* Optional: Add a max height for scrolling */
+  overflow-y: auto;
+  z-index: 1000; /* Ensure dropdown overlays other content */
+}
+
+form.rjsf select {
+  top: 100% !important;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 28px;
+  max-height: 200px; /* Optional: Add a max height for scrolling */
+  overflow-y: auto;
+  z-index: 1000; /* Ensure dropdown overlays other content */
+}
+
+form.rjsf input[type="text"] {
+  width: 100%;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  padding: 4px 10px;
+  font-family: sans-serif;
+  box-sizing: border-box; /* padding included in width */
+}
+
+input[type="radio"] {
+  float: left;
+  margin-top: 4px;
+  margin-right: 8px; /* space between radio and text */
+}
+
+.field-radio-group {
+  text-align: left;
+}
+
+form.rjsf button[type="submit"] {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-top: 12px;
+  text-align: left;
+  width: auto; /* or set width as needed */
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+form.rjsf button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.blue-button {
+  margin-top: 12px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  white-space: nowrap; /* Prevent button text from wrapping */
+  background-color: #007bff; /* Bootstrap blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px; /* Define font size here */
+}
+
+.blue-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.green-button {
+  margin-top: 12px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  white-space: nowrap; /* Prevent button text from wrapping */
+  background-color: #28a745; /* Bootstrap green */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px; /* Define font size here */
+}
+
+.green-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.orange-button {
+  margin-top: 12px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  white-space: nowrap; /* Prevent button text from wrapping */
+  background-color: #ffa500; /* Bootstrap orange */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px; /* Define font size here */
+}
+
+.orange-button:hover {
+  background-color: #df9100; /* Darker orange on hover */
+}
+
+.red-button {
+  margin-top: 12px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  white-space: nowrap; /* Prevent button text from wrapping */
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px; /* Define font size here */
+}
+
+.red-button:hover {
+  background-color: rgb(139, 0, 0); /* Darker red on hover */
+}
+
+.leaflet-container {
+  z-index: 1;
+}
+
+.leaflet-container {
+  z-index: 1;
+}
+
+input[readonly] {
+  background-color: #e9ecef; /* Light gray background */
+  cursor: not-allowed;       /* Show not-allowed cursor on hover */
+  pointer-events: none;      /* Prevent text selection and interaction */
+  color: #6c757d;            /* Optional: Gray out text color */
+}

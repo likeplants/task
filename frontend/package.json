@@ -1,0 +1,54 @@
+{
+  "name": "humusmonitor",
+  "version": "1.0.2",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.2.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@rjsf/core": "^5.24.12",
+    "@rjsf/validator-ajv8": "^5.24.12",
+    "@sweetalert2/theme-dark": "^5.0.27",
+    "framer-motion": "^12.19.1",
+    "jquery": "^3.7.1",
+    "leaflet": "^1.9.4",
+    "leaflet-draw": "^1.0.4",
+    "mousetrap": "^1.6.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-google-recaptcha": "^3.1.0",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-draw": "^0.20.6",
+    "react-redux": "^8.0.5",
+    "react-scripts": "^5.0.1",
+    "redux-persist": "^6.0.0",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
+    "sweetalert2-react-content": "^5.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
