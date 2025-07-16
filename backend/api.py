@@ -57,6 +57,15 @@ async def add_business(request: Request, business: BusinessSchema):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to insert: {str(e)}")
 
+@app.get("/api/businesses/load", tags=["businesses"])
+async def get_businesses():
+    businesses = await db.businesses.find().to_list(100)
+    # Convert ObjectId to str for JSON serialization
+    for business in businesses:
+        if "_id" in business:
+            business["_id"] = str(business["_id"])
+    return businesses
+
 ########################## USER MANAGEMENT ####################
 @app.get("/api/user/list_all", dependencies=[Depends(JWTBearer([{"role":"admin"}]))], tags=["user_management"])
 async def users_list():
