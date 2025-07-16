@@ -140,11 +140,12 @@ const MapPage = () => {
 
         <Form schema={schema} uiSchema={uiSchema} formData={formData} validator={validator}
          fields={fields} formContext={formContext} 
-         onChange={()=>{
-          alert("TODO: Dispatch to redux");
+         onChange={(e)=>{
+          dispatch(setBusinessAttr(e.formData));
          }}
-         onSubmit={()=>{
-          alert("TODO: Use capi.post() to post data to endpoint /businesses/add");
+         onSubmit={(e)=>{
+          const businessData = e.formData;
+          capi.post("/businesses/add", businessData);
          }}
          >
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
