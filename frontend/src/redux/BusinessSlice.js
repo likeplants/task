@@ -21,7 +21,7 @@ const businessSlice = createSlice({
           state[key] = payload[key];
         }
       });
-      alert(JSON.stringify(state))
+      // alert(JSON.stringify(state))
     },
   },
 });
